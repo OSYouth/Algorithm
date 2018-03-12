@@ -1,0 +1,28 @@
+spring:
+#  profiles:
+#    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://120.77.200.240:3306/fanruidemo
+#    username: root
+#    password: root
+    url: jdbc:mysql://139.199.3.41:3306/fanruidemo
+    username: root
+    password: qwerty
+#    url: jdbc:mysql://gz-cdb-3e3x30pp.sql.tencentcdb.com:63311/fanruidemo
+#    username: root
+#    password: lc0510@qq
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  thymeleaf:
+#    content-type: text/html
+    cache: false
+    mode: LEGACYHTML5
+    prefix: classpath:/templates
+    suffix: .html
+  session:
+    store-type: none
